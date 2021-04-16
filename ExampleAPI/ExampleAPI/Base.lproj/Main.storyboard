@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExampleAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total of coins: -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIx-QG-gTM">
+                                <rect key="frame" x="148" y="103" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3o-Kr-Bsa">
+                                <rect key="frame" x="149.5" y="832" width="115" height="30"/>
+                                <state key="normal" title="Update coins list"/>
+                                <connections>
+                                    <action selector="updateCoinsList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8l-a5-yXh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpx-AA-wxB">
+                                <rect key="frame" x="159.5" y="74" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aH7-zz-vlW">
+                                <rect key="frame" x="0.0" y="142" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hxm-gq-ejO">
+                                <rect key="frame" x="0.0" y="210" width="414" height="614"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoinTableViewCell" id="s9t-Z8-PSc">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s9t-Z8-PSc" id="MDI-n6-Mpo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hxm-gq-ejO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Tr-Df-B5e"/>
+                            <constraint firstItem="lIx-QG-gTM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44L-dY-Vp0"/>
+                            <constraint firstItem="W3o-Kr-Bsa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Yp-Pb-AJx"/>
+                            <constraint firstItem="aH7-zz-vlW" firstAttribute="top" secondItem="lIx-QG-gTM" secondAttribute="bottom" constant="18" id="68M-wP-vR5"/>
+                            <constraint firstItem="Jpx-AA-wxB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="IFN-Vy-Uke"/>
+                            <constraint firstItem="hxm-gq-ejO" firstAttribute="top" secondItem="aH7-zz-vlW" secondAttribute="bottom" constant="12" id="LNQ-94-lkS"/>
+                            <constraint firstItem="aH7-zz-vlW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OaA-Fi-5HQ"/>
+                            <constraint firstItem="hxm-gq-ejO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="T4t-zI-RKa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W3o-Kr-Bsa" secondAttribute="bottom" id="Uas-D3-Eeh"/>
+                            <constraint firstItem="Jpx-AA-wxB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2j-dC-zr6"/>
+                            <constraint firstItem="W3o-Kr-Bsa" firstAttribute="top" secondItem="hxm-gq-ejO" secondAttribute="bottom" constant="8" symbolic="YES" id="cFG-md-GSV"/>
+                            <constraint firstItem="aH7-zz-vlW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d3y-rt-J5E"/>
+                            <constraint firstItem="lIx-QG-gTM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="mSM-is-KRt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinSearchBar" destination="aH7-zz-vlW" id="Y2B-bG-Ict"/>
+                        <outlet property="tableView" destination="hxm-gq-ejO" id="s6d-iE-w8w"/>
+                        <outlet property="totalCoinsLabel" destination="lIx-QG-gTM" id="fyB-RS-QhW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172.46376811594203" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

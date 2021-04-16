@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ExampleAPI' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ExampleAPI
+  pod 'SwiftLint'
+	pod 'Utilities', :git => 'https://github.com/lucaswkuipers/Utilities.git'
+  pod 'API', :path => '../'
+
+  target 'ExampleAPITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ExampleAPIUITests' do
+    # Pods for testing
+  end
+
+end
