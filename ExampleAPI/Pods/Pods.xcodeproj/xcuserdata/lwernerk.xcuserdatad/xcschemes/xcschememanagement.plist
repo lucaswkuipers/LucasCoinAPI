@@ -4,13 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>API.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +17,13 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>LucasCoinAPI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-ExampleAPI-ExampleAPIUITests.xcscheme</key>
 		<dict>

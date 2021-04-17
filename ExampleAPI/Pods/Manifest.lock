@@ -1,15 +1,15 @@
 PODS:
-  - Alamofire (5.4.1)
-  - AlamofireImage (4.1.0):
-    - Alamofire (~> 5.1)
-  - API (1.0.0):
+  - Alamofire (5.4.2)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - LucasCoinAPI (0.0.1):
     - AlamofireImage
     - SwiftLint
   - SwiftLint (0.43.1)
   - Utilities (1.0.0)
 
 DEPENDENCIES:
-  - API (from `../`)
+  - LucasCoinAPI (from `../`)
   - SwiftLint
   - Utilities (from `https://github.com/lucaswkuipers/Utilities.git`)
 
@@ -20,23 +20,23 @@ SPEC REPOS:
     - SwiftLint
 
 EXTERNAL SOURCES:
-  API:
+  LucasCoinAPI:
     :path: "../"
   Utilities:
     :git: https://github.com/lucaswkuipers/Utilities.git
 
 CHECKOUT OPTIONS:
   Utilities:
-    :commit: 9152c2619c2622c118490f4158c1cab93256bd9c
+    :commit: 9fb15c75accd805b74db84d932869b3360988633
     :git: https://github.com/lucaswkuipers/Utilities.git
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
-  API: f29b9cc4a24497fbd7d3154abd1b167ead56636a
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  LucasCoinAPI: 62d41fe08e88c4656279cd43093985810322ce8c
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   Utilities: 0581be06184fda3ab4fdac2d9a8d117e46d6429b
 
-PODFILE CHECKSUM: 684be5ce6f8a76369d5ce77e4cd394696d9d909d
+PODFILE CHECKSUM: 69afd9718f47d55a6a25839b97cb2ed711a7f68e
 
 COCOAPODS: 1.10.1

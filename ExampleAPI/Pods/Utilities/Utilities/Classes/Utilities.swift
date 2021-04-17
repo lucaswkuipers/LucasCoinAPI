@@ -29,8 +29,6 @@ public class Utilities {
 		}
 		
 		let formattedMoney = "$ \(thousands.joined(separator: ",")).\(decimalPart!)"
-		
-		print("Coin formatted: \(formattedMoney)")
 		return formattedMoney
 	}
 	

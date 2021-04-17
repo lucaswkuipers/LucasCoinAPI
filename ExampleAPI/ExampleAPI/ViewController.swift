@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import API
+import LucasCoinAPI
 import Utilities
 import AlamofireImage
 
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 		setupUI()
 	}
 	func fetchData(searchedCoinID: String = "") {
-		coins = API.requestCoinList(assetId: searchedCoinID)
+		coins = API.requestCoinList(on: self, assetId: searchedCoinID)
 		tableView.reloadData()
 	}
 	func setupUI() {

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double APIVersionNumber;
-FOUNDATION_EXPORT const unsigned char APIVersionString[];
+FOUNDATION_EXPORT double LucasCoinAPIVersionNumber;
+FOUNDATION_EXPORT const unsigned char LucasCoinAPIVersionString[];
 
