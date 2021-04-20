@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LucasCoinAPI'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'This module is responsible for  LucasCoinAPI calls as well as codable models'
 
 # This description is used to generate tags and improve search results.
