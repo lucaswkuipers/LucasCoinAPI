@@ -1,9 +1,9 @@
 # Lucas Coin API
 
-[![CI Status](https://img.shields.io/travis/lucaswkuipers/API.svg?style=flat)](https://travis-ci.org/lucaswkuipers/API)
-[![Version](https://img.shields.io/cocoapods/v/API.svg?style=flat)](https://cocoapods.org/pods/API)
-[![License](https://img.shields.io/cocoapods/l/API.svg?style=flat)](https://cocoapods.org/pods/API)
-[![Platform](https://img.shields.io/cocoapods/p/API.svg?style=flat)](https://cocoapods.org/pods/API)
+[![CI Status](https://img.shields.io/travis/lucaswkuipers/LucasCoinAPI.svg?style=flat)](https://travis-ci.org/lucaswkuipers/LucasCoinAPI)
+[![Version](https://img.shields.io/cocoapods/v/LucasCoinAPI.svg?style=flat)](https://cocoapods.org/pods/LucasCoinAPI)
+[![License](https://img.shields.io/cocoapods/l/LucasCoinAPI.svg?style=flat)](https://cocoapods.org/pods/LucasCoinAPI)
+[![Platform](https://img.shields.io/cocoapods/p/LucasCoinAPI.svg?style=flat)](https://cocoapods.org/pods/LucasCoinAPI)
 
 ## Example
 
