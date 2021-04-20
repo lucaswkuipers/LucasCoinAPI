@@ -1,4 +1,4 @@
-# API
+# Lucas Coin API
 
 [![CI Status](https://img.shields.io/travis/lucaswkuipers/API.svg?style=flat)](https://travis-ci.org/lucaswkuipers/API)
 [![Version](https://img.shields.io/cocoapods/v/API.svg?style=flat)](https://cocoapods.org/pods/API)
@@ -17,7 +17,21 @@ API is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'API'
+pod 'LucasCoinAPI'
+```
+
+## Usage (example)
+```swift
+import LucasCoinAPI
+
+let coins = [Coin]
+
+override viewDidLoad() {
+...
+
+coins = API.requestCoinList(on: self)
+
+}
 ```
 
 ## Author
